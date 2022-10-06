@@ -49,6 +49,7 @@ img {
 margin: 5px 5px;    
 width: 129px;
 height: 193px;
+border: 8px solid white
 }
 
 `
