@@ -3,6 +3,7 @@ import { createGlobalStyle } from "styled-components";
 const GlobalStyle = createGlobalStyle`
 * {
   box-sizing: border-box;
+  text-decoration: none;
 }
 
 html, body, div, span, applet, object, iframe,
@@ -49,6 +50,12 @@ table {
 	border-spacing: 0;
 }
 
+.root{
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
 
+}
 `;
 export default GlobalStyle;
