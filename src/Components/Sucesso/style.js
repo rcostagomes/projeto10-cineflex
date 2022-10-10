@@ -29,6 +29,7 @@ export const Title = styled.div`
     font-weight: 400;
     font-family: "Roboto";
     font-style: normal;
+    color: #247a6b;
   }
 `;
 export const Main = styled.div`

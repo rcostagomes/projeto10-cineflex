@@ -5,12 +5,24 @@ import { Cor,Cadeiras,Demos,Main,CadeiraOcupada } from "./style";
 
 function CadeiraLivre({name,id,save,setSave,numero,setNumero}){
 const [selecionado,setSelecionado] = useState(false) // Seleciona os assentos 
+console.log(numero)
+console.log(save)
+function marcarLugar(id,name){
+  console.log(save.includes(id),numero.includes(name))
 
-function marcarLugar(){
-  selecionado === false ? setSelecionado(true):setSelecionado(false) 
-  setSave([...save,id])
-  setNumero([...numero,name])
+  if (selecionado === true ){
+    setSelecionado(false) 
+    setSave([...save.filter((ID)=> ID !== id )])
+    setNumero([...numero.filter((ID)=> ID !== name)])
+    
+  }else {
+    setSelecionado(true)
+    setSave([...save,id])
+    setNumero([...numero,name])
+  }
+  
 }
+ 
 
 return(
   <div onClick={()=> marcarLugar(id,name)}
