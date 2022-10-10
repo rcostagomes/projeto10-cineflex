@@ -7,16 +7,15 @@ import Inputs from "./input/Inputs";
 import { Header, Title } from "./style";
 export default function Assentos() {
   const [lugares, setLugares] = useState([]); // Pegas os lugares na API para fazer o map
-  const [TitleF, setTitleF] = useState([])  // Pega o titulo do Filme
+  const [TitleF, setTitleF] = useState([]);  // Pega o titulo do Filme
   const [DayF,setDayF]= useState([]); // Pega o dia do filme 
-  const [Date,setDate] = useState([]) // Pega a data do filme 
-  const [nome, setNome] = useState("") // Pega o nome do usuário
-  const [cpf, setCpf] = useState("") // Pega o cpf do usuário 
-  const [save, setSave] = useState([]) // Salva o id dos filmes selecionados
-  const [numero, setNumero]= useState([]) // Salva o numero do(os) assentos
-  const [hora,setHora]= useState();
+  const [Date,setDate] = useState([]);// Pega a data do filme 
+  const [nome, setNome] = useState(""); // Pega o nome do usuário
+  const [cpf, setCpf] = useState(""); // Pega o cpf do usuário 
+  const [save, setSave] = useState([]); // Salva o id dos filmes selecionados
+  const [numero, setNumero]= useState([]); // Salva o numero do(os) assentos
+  const [hora,setHora]= useState(); 
   const navigate = useNavigate();
-
   const { sessaoID } = useParams();
   return (
     <>

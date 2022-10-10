@@ -5,8 +5,6 @@ import { Cor,Cadeiras,Demos,Main,CadeiraOcupada } from "./style";
 
 function CadeiraLivre({name,id,save,setSave,numero,setNumero}){
 const [selecionado,setSelecionado] = useState(false) // Seleciona os assentos 
-console.log(numero)
-console.log(save)
 function marcarLugar(id,name){
   console.log(save.includes(id),numero.includes(name))
 

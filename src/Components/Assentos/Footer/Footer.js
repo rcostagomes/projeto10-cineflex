@@ -3,7 +3,7 @@ import { useEffect, useState } from "react";
 import styled from "styled-components";
 
 export default function Footer(props) {
-  const {sessaoID,TitleF,setTitleF,DayF,setDayF,Date,setDate, hora ,setHora }= props
+  const {sessaoID,TitleF,setTitleF,DayF,setDayF,Date,setDate, hora ,setHora }= props;
   const [banner, setBanner] = useState([]);
  
 

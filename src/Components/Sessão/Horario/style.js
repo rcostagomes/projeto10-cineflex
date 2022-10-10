@@ -6,7 +6,6 @@ export const Options = styled.div`
   display: flex;
   flex-direction: column;
   h1 {
-    margin-left: 35px;
     margin-bottom: 10px;
     font-family: "Roboto";
     font-style: normal;
@@ -16,7 +15,6 @@ export const Options = styled.div`
     display: flex;
     align-items: center;
     letter-spacing: 0.02em;
-
     color: #293845;
   }
 `;
@@ -26,7 +24,7 @@ export const Horas = styled.div`
   justify-content: center;
   display: flex;
   div {
-    margin-left: 20px;
+    margin-right: 20px;
     display: flex;
     align-items: center;
     justify-content: center;
